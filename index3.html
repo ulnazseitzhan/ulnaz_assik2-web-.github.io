@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 3: Table and Form</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+  <h1 id="page-title">Student Grades</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">Aigerim</td>
+        <td>Math</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>Physics</td>
+        <td>B+</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Serik</td>
+        <td>Programming</td>
+        <td>A+</td>
+      </tr>
+      <tr>
+        <td>Databases</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Dana</td>
+        <td>History</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>Literature</td>
+        <td>A-</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Nurlan</td>
+        <td>Math</td>
+        <td>C+</td>
+      </tr>
+      <tr>
+        <td>Programming</td>
+        <td>B</td>
+      </tr>
+      <tr class="highlight-row">
+        <td rowspan="2">Alina</td>
+        <td>Biology</td>
+        <td>A</td>
+      </tr>
+      <tr class="highlight-row">
+        <td>Chemistry</td>
+        <td>A+</td>
+      </tr>
+      <tr>
+        <td colspan="2">Average Grade</td>
+        <td>B+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Feedback Form</h2>
+  <form class="form-container">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="role">Role:</label>
+    <select id="role">
+      <option>Student</option>
+      <option>Teacher</option>
+      <option>Other</option>
+    </select>
+
+        <p>Do you like this course?</p>
+    <label class="radio-inline">
+    <input type="radio" name="like" value="yes"> Yes
+    </label>
+    <label class="radio-inline">
+    <input type="radio" name="like" value="no"> No
+    </label>
+
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" rows="4"></textarea>
+
+    <button type="submit">Submit</button>
+    <a href="../index.html" class="form-button">Home</a>
+
+
+  </form>
+
+</body>
+</html>
